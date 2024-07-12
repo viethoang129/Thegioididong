@@ -127,4 +127,61 @@ nav ul li:nth-child(8):hover a{
 nav ul li:nth-child(9):hover a{
     color: #fff200;
 }
+/* menu bar */
+.menu-bar{
+    background-color: #FED100;
 
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    
+}
+.menu-bar ul li a{
+    color: #000000;
+    font-size: 15px;
+}
+.menu-bar ul li a i {
+    margin-right: 6px;
+    font-size: 15px;
+}
+.menu-bar ul li{
+    padding: 15px 6px ;
+    transition: all 0.3s ease;
+  
+}
+
+.menu-bar ul li:hover{
+    background-color: white;
+}
+.menu-bar ul li:nth-child(9){
+    position: relative;
+
+}
+.menu-bar ul li:nth-child(9)::before{
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #F51212;
+    border-radius: 5px;
+    right: -25px;
+    top: 2px;
+    font-size: 10px;
+    padding-left: 1px;
+    color: white;
+}
+.menu-bar ul li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    background-color: #f333;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 12px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
